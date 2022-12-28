@@ -15,3 +15,4 @@ const isPrime = (n) => {
 console.log(isPrime(1));
 console.log(isPrime(4));
 console.log(isPrime(5));
+//Bio O notation of this algorithm is : O(n/2)
