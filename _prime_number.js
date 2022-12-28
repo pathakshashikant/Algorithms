@@ -2,7 +2,8 @@ const primeNumber = (lowestvalue, highestvalue) => {
   let primeNumberList = [];
   for (let i = lowestvalue; i < highestvalue; i++) {
     let temp = true;
-    for (let j = 2; j < i; j++) {
+    for (let j = 2; j <= Math.sqrt(i); j++) {
+      // for (let j = 2; j < i; j++) {
       if (i % j == 0) {
         temp = false;
         break;
