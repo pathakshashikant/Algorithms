@@ -1,22 +1,14 @@
 const fibonacciSeries = (n) => {
-  if (!n) {
-    return "Please input number greater than 0";
-  }
-  if (n === 1) {
-    return n - 1;
-  }
-
-  let firstNo = 0;
-  let secondNo = 1;
-
   let list = [0, 1];
   for (let i = 2; i < n; i++) {
-    let temp = firstNo + secondNo;
-    firstNo = secondNo;
-    secondNo = temp;
-    list.push(temp);
+    list[i] = list[i - 2] + list[i - 1];
   }
   return list;
 };
 
 console.log(fibonacciSeries(2));
+console.log(fibonacciSeries(3));
+console.log(fibonacciSeries(7));
+
+//Time complexity: O(n) /Linear
+//Space complexity: O(n) /Linear
