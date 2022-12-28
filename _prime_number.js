@@ -21,4 +21,4 @@ const primeNumber = (lowestvalue, highestvalue) => {
 console.log(primeNumber(4, 9));
 console.log(primeNumber(6, 8));
 
-//Bio O notation of this algorithm is : O(n*n/2)
+//Bio O notation of this algorithm is : O(n*sqrt(n))
